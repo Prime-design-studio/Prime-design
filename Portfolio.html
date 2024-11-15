@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html{
+                scroll-behavior: smooth;
+            }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.back-container{
+  top: 0px;
+  z-index: 1;
+  width: 100vw;
+  height: 100vw;
+  position:absolute;
+  
+  object-fit: cover;
+  overflow-x: hidden;
+  margin: 0;
+ 
+}
+.back-container img{
+  width: 100%;
+  height: 100%;
+  position: fixed; object-fit:cover ;
+}
+
+.back-container2{
+  width: 100vw;
+  height: 100vw;
+  top: 0px;
+  z-index: 2;
+  
+  object-fit: cover;
+  overflow-x: hidden;
+  margin: 0;
+  position: absolute;
+  
+}
+
+.back-container2 img{
+  width: 100%;
+  height: 100%;
+  position: fixed;object-fit: cover;
+  animation-name: back;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes back{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.banner-item8 img{
+        z-index: 6;
+        width: 5%;
+        position: fixed;
+        border-radius: 10%; animation-name: log1;
+        animation-duration:5.3s ;
+        opacity: 0;
+        animation-delay: none;
+        
+        
+        
+    }
+ 
+    
+    .banner-item5 img{
+        z-index: 7;
+        width: 5%;
+        position: fixed;
+        border-radius: 10%;
+        animation-name: log2;
+        animation-duration:5.3s ;
+        opacity: 0;
+        animation-delay:5s ;
+        
+        
+        
+    }
+    .banner-item7 img{
+        z-index: 8;
+        width: 5%;
+        position: fixed;
+        border-radius: 10%;
+        animation-name: log3;
+        animation-duration:5.3s ;
+        opacity: 0;
+        animation-delay:10s ;
+        
+        
+        
+    }
+    .banner-item6 img{
+        z-index: 9;
+        width: 5%;
+        position: fixed;
+        border-radius: 10%;
+        animation-name: log4;
+        animation-duration:5.3s ;
+        animation-delay:15s ;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        
+        
+        
+    }
+    @keyframes log1 {
+0%{transform: rotatey(0deg);opacity: 0; top: 2%; left: 2%;}
+20%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+100%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+log2{
+    
+}
+    }
+    @keyframes log2 {
+0%{transform: rotatey(0deg);opacity: 0; top: 2%; left: 2%;}
+20%{transform: rotatey(  360deg); opacity: 1;  top: 2%; left: 2%;}
+100%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+    }
+
+
+    @keyframes log3 {
+0%{transform: rotatey(0deg);opacity: 0; top: 2%; left: 2%;}
+20%{transform: rotatey(  360deg); opacity: 1;  top: 2%; left: 2%;}
+100%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+    }
+
+
+    @keyframes log4 {
+0%{transform: rotatey(0deg);opacity: 0; top: 2%; left: 2%;}
+20%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+100%{transform: rotatey( 360deg); opacity: 1;  top: 2%; left: 2%;}
+    }
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  z-index: 4;
+  position: relative;
+  z-index: 3;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+.column img {
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.art-container{
+    display: grid;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 3fr;
+    grid-template-rows: 3fr;
+}
+.art-container img{
+    width:30% ;
+    height: 30%;
+    object-fit: contain;
+}
+.tete{
+  font-size: 7vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  color: aliceblue;
+  z-index: 3;
+  margin-top:10% ;
+}
+.text-container2{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    top:10px;
+    right: 20px;
+    z-index: 5;
+    transition: 1s;
+    animation-duration: 3s;
+    animation-name: bli;
+    animation-timing-function: ease;
+    
+    
+}
+
+
+
+
+
+.navigation{
+    z-index: 6;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    text-align: right;
+    right: 20px;
+   
+    
+
+}
+
+.navigation a:hover{
+    color: rgb(42, 72, 206);
+    padding-left:5%;
+    padding-right: 1%;
+    background-color:aliceblue ;
+    border-radius: 2vw;
+}
+
+.navigation a {
+    margin-left: 2vw; 
+    position:relative;
+    font-size: 4vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    transition: 0.5s;
+    
+
+}
+.foot {
+    position: relative;
+    width: 100%;
+    padding: 4% 2%; /* Adjusted padding for spacing */
+    background-color: black;
+    text-align: center;
+    z-index: 10;
+}
+.foot-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw; /* Space between the title and row of items */
+    z-index: 10;
+}
+
+.text2 h1 {
+    font-size: 6vw;
+    color: rgb(31, 56, 167);
+    margin: 0; /* Remove extra margin */
+}
+
+/* Container for links and text aligned side-by-side */
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5vw; /* Space between text groups and nav */
+    width: 100%;
+    max-width: 90vw; /* Max width to keep items centered */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.text2, .nav2, .contact {
+    flex: 1; /* Distribute space evenly */
+    min-width: 15vw; /* Ensure elements don't shrink too small */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.text2 h2 {
+    font-size: 3vw;
+    color: aliceblue;
+    margin: 0.5vw 0; /* Consistent spacing */
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.nav2 a {
+    font-size: 3vw;
+    color: aliceblue;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.nav2 a:hover {
+    padding: 1vw 2vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 136, 255);
+    border-radius: 1vw;
+}
+
+.contact a {
+    font-size: 2vw;
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact a:hover{
+    padding: 1vw 2vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 136, 255);
+    border-radius: 1vw;
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1 class="tete">portfolio</h1>
+</div>
+
+<!-- Photo Grid -->
+ 
+  <div class="banner-container">
+            <div class="text-container2">
+                <nav class="navigation">
+                    <a class="nav" href="Main-page.html">Menu</a>
+                    <a class="nav" href="Main-page.html#services">Services</a>
+                    <a class="nav" href="Portfolio.html#Banners">Portfolio</a>
+                    <a class="nav" href="booking.html">Book Now</a>
+                  </nav>
+            </div>
+           <div class="back-container">
+                <img class="back" src="images prime\banniere 2.jpg" alt="">
+         </div>
+
+            <div class="back-container2">
+                <img src="c:\Users\Marc-Andy\Downloads\banniere 2.jpg" alt="">
+                </div>
+                <div class="banner-item5"> <img src="https://live.staticflickr.com/65535/54133330349_b57f7ae5d5_b.jpg" alt=""></div>
+                <div class="banner-item6"> <img src="https://live.staticflickr.com/65535/54133445040_69ef40ab41_b.jpg" alt=""></div>
+                <div class="banner-item7"> <img src="https://live.staticflickr.com/65535/54132142297_b0c07ab182_b.jpg" alt=""></div>
+                <div class="banner-item8"> <img src="https://live.staticflickr.com/65535/54133445045_5ce725fc33_b.jpg" alt=""></div>
+  <h1 id="Banners" class="tete">Banners</h1>
+
+ </div>
+<div class="row"> 
+  <div class="column">
+  <img src="https://live.staticflickr.com/65535/54120812760_f871e7cd3c_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120419656_a0f0f78acf_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120676298_3c166e3cb1_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54108543483_38e49aee26_b.jpg" style="width:100%">
+
+  <div class="text-container">
+  <h1 class="tete">Graphique</h1>
+  </div>
+  
+  <img src="https://live.staticflickr.com/65535/54120883190_f55da12d26_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54137806405_ce5d28ee09_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120812165_c143d8e5d8_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120371476_4ab33744f9_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54119522467_d180039a2e_b.jpg" style="width:100%">
+
+
+  </div>
+  <div class="column">
+  <img src="https://live.staticflickr.com/65535/54112979220_42b79ef067_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54111595772_5f09a53ebb_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54112587789_8f80924d13_b.jpg" style="width:100%">
+  </div>
+  <div class="column">
+  <img src="https://live.staticflickr.com/65535/54120370141_4f03c54aa9_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120707224_017c58ee37_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54119521292_8c48b66c3f_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54136498622_f2dd582bfe_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120830140_b2d0b4679b_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120690944_d32ce5b64f_b.jpg" style="width:100%">
+  <img src="https://live.staticflickr.com/65535/54120354451_ec0548b134_b.jpg" style="width:100%">
+ 
+  </div> 
+  <div class="text-container">
+    <h1 class="tete">Arts</h1>
+
+  </div>
+  <div class="art-container">
+    <div class="art">
+      <img src="https://live.staticflickr.com/65535/54120372366_92f21731e6_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120830175_9001a2f52f_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120709389_e79668f629_n.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120829400_c84020efe0_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120829260_e749790a9b_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119522027_4ab7dc009e_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120707834_e7aae35369_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120829205_6f31de52f8_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521937_4c55729d34_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521762_1944bf885e_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120829115_5b141d5f55_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521782_94501b1f68_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521402_a74134056c_c.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521507_ae384d7d2f_z.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120642998_08a4915e56_z.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54119521237_acf5b91997_n.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120370131_5191190c61_w.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120828525_0a9a61cb23_n.jpg" alt="">
+      
+      
+      <img src="https://live.staticflickr.com/65535/54120707084_8d25965d06_n.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120645088_e473b84337.jpg" alt="">
+      <img src="https://live.staticflickr.com/65535/54120729268_e1c825b081_m.jpg" alt="">
+  
+ </div>
+  </div>
+</div>
+<footer class="foot">
+    <div class="foot-container">
+        <div class="text2">
+            <h1>Prime Design</h1>
+        </div>
+        <div class="footer-row">
+            <div class="text2">
+                <h2>Logo Conception</h2>
+                <h2>Banner Conception</h2>
+                <h2>Website designs</h2>
+                <h2>CSS Animations</h2>
+            </div>
+            <div class="nav2">
+                <a class="" href="Main-page.html">Menu</a>
+                <a class="" href="Main-page.html#services">Services</a>
+                <a class="" href="Portfolio.html#Banners">Portfolio</a>
+                <a class="" href="booking.html">Book Now</a>
+            </div>
+            <div class="contact">
+                <a href="mailto:example@example.com">Contact Us</a> <br>
+                <a href="tel:(514) 779-7536">(514) 779-7536</a><br>
+                <a href="https://www.instagram.com/prime_designer_/">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
