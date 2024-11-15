@@ -157,11 +157,15 @@ height: 100vw;
 @media(max-width:600px)
 {
     .island{
-        left: calc(50% - 25vh);
+        left: calc(50% - 20vh);
+        top: 20%;
     }
     .island img{
-        width: 25vh;
+        width: 40vh;
     }
+    @keyframes island{
+    from{transform:translateY(-5vh);}
+    to{transform:translatey(-10vh);}}
 }
 
 .clouds{
